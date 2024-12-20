@@ -1,15 +1,18 @@
-import { View, Text } from 'react-native'
+import { Steps } from '@/components/steps'
+import { Welcome } from '@/components/welcome'
+import { View } from 'react-native'
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',    
+        padding: 40,
+        gap: 40, 
       }}
     >
-      <Text style={{ fontSize: 22 }}>React Native Started</Text>
+      <Welcome />
+      <Steps />
     </View>
   )
 }
